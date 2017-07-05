@@ -3,7 +3,7 @@ Collection of handy scripts I've written over time.
 Some scripts require configuration (API keys etc.). These configuration
 variables are near the top of the source files.
 
-## Script List
+## Scripts
 
 1. `pb-notify.sh`
 
@@ -23,6 +23,7 @@ variables are near the top of the source files.
     `wget https://example.com/huge-file.mp4; ./pb-notify.sh "Download done"`
 
 
+
 2. `file-watcher.sh`
 
     Watch a text file for changes and run a command if the given pattern is
@@ -38,7 +39,7 @@ variables are near the top of the source files.
 
     `Pattern`: Regex to match in the changes
 
-    `Command-To-Run`: Command to run if Pattern is found in the changes
+    `Command-To-Run`: Command to run if `Pattern` is found in the changes
 
     The line in the changes in which `Pattern` is found is passed as an
     argument to `Command-To-Run`.
@@ -52,4 +53,4 @@ variables are near the top of the source files.
     notification text will include the full request.
 
     Supposing you host your resume at https://example.com/my_resume.pdf; you'll
-    get PushBullet notification everytime someone views your resume.
+    get a PushBullet notification everytime someone views your resume.
